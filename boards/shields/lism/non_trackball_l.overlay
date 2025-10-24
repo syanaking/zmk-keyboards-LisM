@@ -1,0 +1,5 @@
+#include "non_trackball.overlay"
+
+&left_split {
+    status = "disabled";
+};

@@ -1,0 +1,33 @@
+if SHIELD_LISM_R
+    config ZMK_BLE
+        bool
+        default y
+    config ZMK_SPLIT_ROLE_CENTRAL
+        default y
+    # Name must be less than 16 characters long!
+    config ZMK_KEYBOARD_NAME
+        default "LisM"
+endif
+
+if SHIELD_LISM_L || SHIELD_LISM_R
+    config NFCT_PINS_AS_GPIOS
+        default y
+
+    config ZMK_SPLIT
+        default y
+
+    config ZMK_POINTING
+        default y
+
+    config ZMK_MOUSE
+        default y
+    
+    config PAW3222
+        default y
+    
+    config INPUT
+        default y
+    
+    config SPI
+        default y
+endif

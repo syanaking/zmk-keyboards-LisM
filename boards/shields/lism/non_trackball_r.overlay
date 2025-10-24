@@ -1,0 +1,6 @@
+#include "non_trackball.overlay"
+
+// 左（split経由）のリスナーを有効化
+&left_listener {
+    status = "okay";
+};
