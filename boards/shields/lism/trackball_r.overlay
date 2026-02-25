@@ -26,7 +26,7 @@
         <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
 
     scroller {
-        layers = <2 5 7>;
+        layers = <1 4 7>;  // L1: Win JIS Fn/Num, L4: iPad Fn/Num, L7: Win US Fn/Num
         input-processors = 
             <&zip_xy_to_scroll_mapper>,
             <&zip_scroll_scaler 1 16>;
